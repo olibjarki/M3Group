@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!--Bruno Ace font-->
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Cal+Sans&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Pirata+One&display=swap" rel="stylesheet">
+<!--Poppins font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Cal+Sans&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Pirata+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Lesið</title>
+</head>
+
+<body class="bg-[#1D1D1D]">
+    <!-- Top navigation bar for desktop -->
+    <nav class="hidden md:flex bg-[#121212] h-[56px] py-[12px] w-full justify-center items-center fixed top-0 z-50">
+        <ul class="flex justify-center items-center gap-[64px]">
+            <li><a href="" class="font-bruno text-[#D2D2DA] text-sm">Heim</a></li>
+            <li><a href="" class="font-bouno text-[#D2D2DA] text-sm">Leita</a></li>
+            <li><a href="" class="font-bruno text-[#D2D2DA] text-sm">Bókahilla</a></li>
+            <li><a href="" class="font-bruno text-[#D2D2DA] text-sm">Samfélag</a></li>
+        </ul>
+    </nav>
+    <header>
+    <!--User icon-->
+    <div class="p-4 md:mt-15">
+        <img src="/images/User-icon.svg" alt="User icon" class="w-14 h-14">
+    </div>
+    </header>
+    
+    <p class="text-[#DE8417] text-4xl font-bruno pl-4 pt-6.25">BÓKAHILLA</p>
+    
+    <!--Navigation buttons-->
+    <div class="flex justify-center items-center space-x-4 pt-9">
+        <button class="border-2 border-theme w-[6rem] h-[2.25rem] rounded-3xl">
+                <a href="bookshelf.html" ><p class="font-[Poppins] text-sm text-theme">Vil lesa</p> </a>
+        </button>
+        <button class="border-2 border-theme w-[6rem] h-[2.25rem] rounded-3xl">
+                <a href="bookshelf-read.html" ><p class="font-[Poppins] text-sm text-theme">Lesið</p> </a>
+        </button>
+        <button class="border-2 border-theme w-[6rem] h-[2.25rem] rounded-3xl">
+                <a href="bookshelf-recommendations.html" ><p class="font-[Poppins] text-sm text-theme">Mæli með</p> </a>
+        </button>
+    </div>
+
+    <!--Bookshelf row 1-->
+    <div class="bg-[url('/images/bookshelf.png')] bg-no-repeat bg-bottom w-full flex justify-center items-center space-x-7 mt-14">
+        <img src="/images/hp-fanginn-fra-azkaban.png" alt="Harry Potter og fanginn frá Azkaban" class="pb-3.25">
+        <img src="/images/myrkrid-milli-stjarnanna.png" alt="Myrkrið milli stjarnanna" class="pb-3.25">
+        <img src="/images/a-court-of-thorns-and-roses.png" alt="A Court of Thorns and Roses" class="pb-3.25">
+    </div>
+    <!--Bookshelf row 2-->
+     <div class="bg-[url('/images/bookshelf.png')] bg-no-repeat bg-bottom w-full flex justify-center items-center space-x-7 mt-14">
+        <img src="/images/krakuveisla.png" alt="Krákuveisla" class="pb-3.25">
+        <img src="/images/hunger-games-1.png" alt="Hunger Games" class="pb-3.25">
+        <img src="/images/litlu-daudarnir.png" alt="Litlu dauðarnir" class="pb-3.25">
+    </div>
+    <!--Bookshelf row 3-->
+     <div class="bg-[url('/images/bookshelf.png')] bg-no-repeat bg-bottom w-full flex justify-center items-center space-x-7 mt-14">
+        <img src="/images/fourth-wing-1.png" alt="Fourth Wing" class="pb-3.25">
+        <img src="/images/the-other-boleyn-girl.png" alt="The Other Boleyn Girl" class="pb-3.25">
+        <img src="/images/to-all-the-boys.png" alt="To all the Boys I Loved Before" class="pb-3.25">
+    </div>
+    
+    <!--Bottom navigation mobile-->
+    <nav class="md:hidden bg-[#121212] h-[56px] py-[12px] fixed bottom-0 flex justify-center items-center w-full">
+        <ul class="flex justify-center items-center gap-[64px]">
+        <li><a href=""><img src="/images/home-icon.svg" alt="Home"></a></li>
+        <li><a href=""><img src="/images/search-icon.svg" alt="Search"></a></li>
+        <li><a href=""><img src="/images/bookshelf-icon.svg" alt="Bookshelf"></a></li>
+        <li><a href=""><img src="/images/community-icon.svg" alt="Community"></a></li>
+        </ul>
+    </nav>
+</body>
+</html>
