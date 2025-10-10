@@ -18,34 +18,36 @@
 <body class="bg-[#1D1D1D]">
     <header>
     <!--User icon-->
-    <div class="p-4">
+    <div class="ml-6 mr-6 mt-6 mb-15">
         <img src="/images/User-icon.svg" alt="User icon" class="w-14 h-14">
     </div>
     </header>
     
     <!--Container for book cover and title info-->
-    <div class="flex ml-4">
+    <div class="flex ml-6">
         <img src="/images/about-cort-of-thorns-and-roses.png" alt="">
-        <section class="flex flex-col justify-center pl-4">
+        <section class="flex flex-col justify-start pl-5">
             <!--Title and author textbox-->
             <div class="w-100">
                 <h1 class="font-bruno text-body text-xl">A Court of Thorns <br>
                     and Roses
                 </h1>
-                <h2 class="font-poppins text-[#D2D2DA] text-sm">Eftir Sarah J. Maas</h2>
+                <h2 class="font-poppins text-body text-sm pt-2">Eftir Sarah J. Maas</h2>
             </div>
-            <div class="w-32 flex flex-row">
+            <div class="w-32 flex flex-row mt-9 space-x-2">
                 <img src="/images/pages-icon.png" alt="Book pages icon">
-                <p class="font-poppins text-[#D2D2DA] text-sm">128 síður</p>
+                <p class="font-poppins text-body text-sm">128 síður</p>
             </div>
         </section>
     </div>
 
-    <!--Want to read button-->
+    <!--Drop down button-->
     <div class="flex justify-center items-center mt-11">
-        <button class="bg-[#DE8417] w-30 h-8 rounded-3xl mt-4">
-            <p class="font-poppins text-sm text-[#D2D2DA]">Vil lesa</p>
-        </button>
+        <select name="bookshelf-options" class="bg-[#DE8417] w-32 h-8 rounded-3xl px-4 font-poppins text-sm text-body">
+            <option value="wantToRead">Vil lesa</option>
+            <option value="read">Lesið</option>
+            <option value="recommendations">Mæli með</option>
+        </select>
     </div>
 
     <!--Boxes with icons-->
@@ -66,12 +68,19 @@
 
     <!--Input box - write a review-->
     <div class="flex justify-center items-center">
-        <textarea placeholder="Skrifa umsögn . . . " class="w-80 h-60 border-2 rounded-2xl border-body text-body font-poppins pl-4 pt-4 "></textarea>
+        <textarea placeholder="Skrifa umsögn . . . " class="w-90 h-60 border-2 rounded-2xl border-body text-body font-poppins pl-4 pt-4 "></textarea>
+    </div>
+
+    <!--Submit review button-->
+    <div class="flex items-center justify-center mt-6">
+        <button class="bg-theme w-32 h-8 rounded-3xl px-4">
+            <p class="font-poppins text-sm text-body">Staðfesta</p>
+        </button>
     </div>
 
     <!--Review by users-->
-    <div class="w-80 h-60 ml-4 flex flex-col justify-center">
-        <div class="flex items-center pl-4 space-x-2">
+    <div class="w-80 h-60 ml-6 flex flex-col justify-center">
+        <div class="flex items-center pl-4 space-x-3">
             <img src="/images/User-icon.svg" alt="User icon">
             <p class="font-poppins text-[#D2D2DA] text-sm font-medium">Kaspían Lár</p>
         </div>
