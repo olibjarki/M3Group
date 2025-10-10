@@ -2,5 +2,8 @@
 
 @theme{
     --font-script: Cal Sans;
+    --font-bruno: Bruno Ace;
+    --font-poppins: Poppins;
+    --color-theme: #DE8417;
+    --color-body: #D2D2DA;
 }
-/* input.css */
