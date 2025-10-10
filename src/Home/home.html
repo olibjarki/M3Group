@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../output.css" rel="stylesheet">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Cal+Sans&family=Fascinate&family=Gurajada&family=Jaro:opsz@6..72&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#1D1D1D]">
+    <!--Logo-->
+    <header class="flex justify-center items-center mt-[88px]">
+        <img class="w-[145px] h-[145px]" 
+            src="/images/User icon.svg" alt="Logo">
+    </header>
+    <!--Main header-->
+    <div class="flex justify-center mt-[2.05rem]">
+        <h1 class="uppercase font-['Cal_Sans'] text-[#DE8417] text-[1.5rem] mb-[5.31rem]"> 
+            Notandanafn
+        </h1>
+    </div>
+    <!--Currently reading paragraph-->
+    <p class="text-[1.25rem] font-['Cal_Sans'] text-[#DE8417]  flex items-centercenter ml-[2.87rem] mb-[1rem]">Að lesa: </p>
+
+    <!--Reading section-->
+    <section class="mx-auto rounded-lg bg-gradient-to-b from-[#DE8417] to-[#121212] flex-col h-[12.44rem] w-[18.8rem] mb-[3.94rem]" >
+        <div class=" flex">
+            <img class="ml-[1.5rem] mt-[1.41rem] w-[6.5rem] h-[9.62rem]" src="/images/BookGamer2.png" alt="A book title">
+            <div class="flex-col ml-[1rem]  mt-[1.41rem]">
+            <h3 class="text-[#D2D2DA] font-['Cal_Sans'] text-[0.875rem]">Ready Player One</h3>
+            <p class="text-[#D2D2DA] font-['Poppins'] text-[0.75rem]">Eftir Sarah J. Maas</p>
+            </div>
+            <p>
+            </p>
+        </div>
+    </section>
+<!--Book shelves-->
+<!-- Title-->
+ <!-- Title-->
+<div class="flex items-center justify-between w-full">
+  <p class="text-[#D2D2DA] font-[Poppins] text-[1.25rem] ml-[1.63rem] mb-[1rem]">
+   Að því að þú spilar tölvuleiki
+  </p>
+    <img class="mb-[1rem] mr-[1.69rem]" src="/images/arrow.svg" alt="arrow">
+</div>
+
+ <!-- Bookshelf row 1 -->
+<div class="bg-[url('/images/bookshelf.png')] bg-no-repeat bg-bottom w-full flex justify-center items-center space-x-7">
+  <img src="/images/BookGamer1.png" alt="Tomorrow tomorrow" class="mb-[0.81rem]">
+  <img src="/images/BookGamer2.png" alt="Myrkrið milli stjarnanna" class="mb-[0.81rem]">
+  <img src="/images/BookGamer3.png" alt="A Court of Thorns and Roses" class="mb-[0.81rem]">
+</div>
+
+<!-- Bookshelf row 2 -->
+<!-- Title-->
+<div class="flex items-center justify-between w-full mt-[3rem]">
+  <p class="text-[#D2D2DA] font-[Poppins] text-[1.25rem] ml-[1.63rem] mb-[1rem]">
+    Top-picks vikunnar
+  </p>
+    <img class="mb-[1rem] mr-[1.69rem]" src="/images/arrow.svg" alt="arrow">
+</div>
+
+<div class="bg-[url('/images/bookshelf.png')] bg-no-repeat bg-bottom w-full flex justify-center items-center space-x-7">
+  <img src="/images/TopPicks1.png" alt="Krákuveisla" class="mb-[0.81rem]">
+  <img src="/images/TopPick2.png" alt="Hunger Games" class="mb-[0.81rem]">
+  <img src="/images/TopPick3.png" alt="Litlu dauðarnir" class="mb-[0.81rem]">
+</div>
+
+<!-- Bookshelf row 3 -->
+<!-- Title-->
+<div class="flex items-center justify-between w-full mt-[3rem]">
+  <p class="text-[#D2D2DA] font-[Poppins] text-[1.25rem] ml-[1.63rem] mb-[1rem]">
+    Haustbækur
+  </p>
+    <img class="mb-[1rem] mr-[1.69rem]" src="/images/arrow.svg" alt="arrow">
+</div>
+
+
+<div class="bg-[url('/images/bookshelf.png')] bg-no-repeat bg-bottom w-full flex justify-center items-center space-x-7 mb-[10rem]">
+  <img src="/images/HaustBook.png" alt="Fourth Wing" class="mb-[0.81rem]">
+  <img src="/images/HaustBook2.png" alt="The Other Boleyn Girl" class="mb-[0.81rem]">
+  <img src="/images/HaustBook3.png" alt="To all the Boys I Loved Before" class="mb-[0.81rem]">
+</div>
+
+<!-- Bottom navigation (mobile) -->
+<nav class="md:hidden bg-[#121212] h-[56px] py-[12px] fixed bottom-0 flex justify-center items-center w-full">
+  <ul class="flex justify-center items-center gap-[64px]">
+    <li><a href="#"><img src="/images/home-icon.svg" alt="Home"></a></li>
+    <li><a href="#"><img src="/images/search-icon.svg" alt="Search"></a></li>
+    <li><a href="#"><img src="/images/bookshelf-icon.svg" alt="Bookshelf"></a></li>
+    <li><a href="/src/Community/community.html"><img src="/images/community-icon.svg" alt="Community"></a></li>
+  </ul>
+</nav>
+
+<!-- Top navigation bar (desktop) -->
+<nav class="hidden md:flex bg-[#121212] h-[56px] py-[12px] w-full justify-center items-center fixed top-0 z-50">
+  <ul class="flex justify-center items-center gap-[64px]">
+    <li><a href="#" class="font-bruno text-[#D2D2DA] text-sm">Heim</a></li>
+    <li><a href="#" class="font-bruno text-[#D2D2DA] text-sm">Leita</a></li>
+    <li><a href="#" class="font-bruno text-[#D2D2DA] text-sm">Bókahilla</a></li>
+    <li><a href="/src/Community/community.html" class="font-bruno text-[#D2D2DA] text-sm">Samfélag</a></li>
+  </ul>
+</nav>
+
+ </body>
+</html>
