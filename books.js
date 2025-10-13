@@ -31,14 +31,14 @@ var bookList = [{
         author: "Vilborg Davíðsdóttir",
         pages: 384,
         picture: "/images/korku-saga.png",
-        bookshelfStatus: ""
+        bookshelfStatus: "",
     },
     {
         title: "Sól rís á sláttudegi",
         author: "Suzanne Collins",
         pages: 459,
         picture: "/images/sol-ris-a-slattudegi.png",
-        bookshelfStatus: ""
+        bookshelfStatus: "",
     },
     {
         title: "Atmosphere",
