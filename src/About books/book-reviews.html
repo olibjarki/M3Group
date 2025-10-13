@@ -15,60 +15,66 @@
     <title>Umsagnir</title>
 </head>
 
-<body class="bg-[#1D1D1D]">
-    <header>
-    <!--User icon-->
-    <div class="ml-6 mr-6 mt-6 mb-15">
-        <img src="/images/User-icon.svg" alt="User icon" class="w-14 h-14">
-    </div>
-    </header>
-    
-    <!--Container for book cover and title info-->
-    <div class="flex ml-6">
-        <img src="/images/about-cort-of-thorns-and-roses.png" alt="" class="w-37 h-52.75">
-        <section class="flex flex-col justify-start pl-5">
+<body class="bg-background">
+    <!--Created gap to keep space under navbar-->
+    <div class="h-15"></div> 
+
+    <!--Container for all visible content-->
+    <div class="w-full max-w-[640px] mx-auto px-4">
+
+        <!--Container for book cover and title info-->
+        <div class="w-[90%] md:w-[80%] mx-auto mt-12 md:mt-16 flex flex-col items-center md:flex-row md:items-start md:space-x-2">
+            <img src="/images/a-court-of-thorns-and-roses.png" 
+                alt="" 
+                class="w-30 h-auto md:w-48">
             <!--Title and author textbox-->
-            <div class="w-100">
-                <h1 class="font-bruno text-body text-xl">A Court of Thorns <br>
-                    and Roses
-                </h1>
-                <h2 class="font-poppins text-body text-sm pt-2">Eftir Sarah J. Maas</h2>
-            </div>
-            <div class="w-32 flex flex-row mt-9 space-x-2">
-                <img src="/images/pages-icon.png" alt="Book pages icon">
-                <p class="font-poppins text-body text-sm">128 síður</p>
-            </div>
-        </section>
-    </div>
+            <section class="mt-6 md:mt-0 md:ml-5 flex flex-col">
+                <div class="text-center md:text-left">
+                    <h1 class="font-bruno text-body text-xl leading-tight">A Court of Thorns <br>
+                        and Roses
+                    </h1>
+                    <h2 class="font-poppins text-body text-base pt-2">Eftir Sarah J. Maas</h2>
+                </div>
+                <div class="flex items-center justify-center md:justify-start space-x-2 mt-6 md:mt-16">
+                    <img src="/images/pages-icon.png" alt="Book pages icon">
+                    <p class="font-poppins text-body text-sm md:text-base">128 síður</p>
+                </div>
+            </section>
+        </div>
 
-    <!--Drop down button-->
-    <div class="flex justify-center items-center mt-11">
-        <select name="bookshelf-options" class="bg-[#DE8417] w-32 h-8 rounded-3xl px-4 font-poppins text-sm text-body">
-            <option value="wantToRead">Vil lesa</option>
-            <option value="read">Lesið</option>
-            <option value="recommendations">Mæli með</option>
-        </select>
-    </div>
+        <!--Dropdown button-->
+        <div class="w-[90%] md:w-[80%] mx-auto flex justify-center mt-11">
+            <select name="bookshelf-options" class="bg-theme w-32 h-8 rounded-3xl px-4 font-poppins text-base text-body">
+                <option value="wantToRead">Vil lesa</option>
+                <option value="read">Lesið</option>
+                <option value="recommendations">Mæli með</option>
+            </select>
+        </div>
 
-    <!--Boxes with icons-->
-    <div class="flex items-center justify-center mt-11 mb-11">
-        <div class="flex flex-col items-center border-t-1 border-b-1 border-body px-6 py-3">
-            <img src="/images/small-book.png" alt="Book icon" class="p-2">
-            <p class="text-body font-poppins text-sm">Um bókina</p>
+        <!--Boxes with icons-->
+        <div class="w-[90%] md:w-[80%] mx-auto mt-11 mb-11 border-t border-b border-body">
+            <div class="flex justify-center divide-x divide-body text-center">
+                <!--Book icon-->
+                <div class="flex-1 flex flex-col items-center justify-center p-6 md:p-8">
+                    <a href="about-book.html"><img src="/images/orange-about-book-icon.png" alt="Book icon" class="p-2"></a>
+                    <p class="text-body font-poppins text-sm mt-2">Um bókina</p>
+                </div>
+                <!--Review icon-->
+                <div class="flex-1 flex flex-col items-center justify-center p-6 md:p-8">
+                    <a href="book-reviews.html"><img src="/images/review-icon.png" alt="Review icon" class="p-2"></a>
+                    <p class="text-body font-poppins text-sm mt-2">Umsagnir</p>
+                </div>
+                <!--Glasses icon-->
+                <div class="flex-1 flex flex-col items-center justify-center p-6 md:p-8">
+                    <a href="https://www.penninn.is/is/book/court-thorns-and-roses"><img src="/images/glasses.png" alt="Glasses icon" class="p-2"></a>
+                    <p class="text-body font-poppins text-sm mt-2">Lestu í dag</p>
+                </div>
+            </div>
         </div>
-        <div class="flex flex-col items-center border-1 border-body px-6 py-3">
-            <img src="/images/review-icon.png" alt="Review icon" class="p-2">
-            <p class="text-body font-poppins text-sm">Umsagnir</p>
-        </div>
-        <div class="flex flex-col items-center border-t-1 border-b-1 border-body px-6 py-3">
-            <img src="/images/glasses.png" alt="Glasses icon" class="p-2">
-            <p class="text-body font-poppins text-sm">Lestu í dag</p>
-        </div>
-    </div>
 
     <!--Input box - write a review-->
-    <div class="flex justify-center items-center">
-        <textarea placeholder="Skrifa umsögn . . . " class="w-90 h-60 border-2 rounded-2xl border-body text-body font-poppins pl-4 pt-4 "></textarea>
+    <div class="w-[90%] md:w-[80%] mx-auto mt-11">
+        <textarea placeholder="Skrifa umsögn . . . " class="w-full h-50 border-2 border-body rounded-2xl text-body font-poppins pl-4 pt-4 resize-none"></textarea>
     </div>
 
     <!--Submit review button-->
@@ -79,31 +85,21 @@
     </div>
 
     <!--Review by users-->
-    <div class="w-80 h-60 ml-6 flex flex-col justify-center">
-        <div class="flex items-center pl-4 space-x-3">
-            <img src="/images/User-icon.svg" alt="User icon">
+    <div class="w-[90%] md:w-[80%] mx-auto mt-6">
+        <div class="flex items-center space-x-3">
+            <img src="/images/User icon.svg" alt="User icon">
             <p class="font-poppins text-[#D2D2DA] text-sm font-medium">Kaspían Lár</p>
         </div>
-        <div class="w-[330px] pl-4 pt-4">
+        <div class="w-full pt-4">
                 <p class="font-poppins text-[#D2D2DA] text-sm">
                     Geggjuð bók! Ég gat ekki lagt hana niður! 
-                    Ég ætla að lesa meira eftir þennan höfund
+                    Ég ætla að lesa meira eftir þennan höfund.
                 </p>
         </div>
     </div>
 
- 
+    <!--Created space in the bottom-->
+    <div class="h-15"></div> 
 
-    
-    
-    <!--Bottom navigation-->
-    <nav class="bg-[#121212] h-[56px] py-[12px] fixed bottom-0 flex justify-center items-center w-full">
-        <ul class="flex justify-center items-center gap-[64px]">
-        <li><a href=""><img src="/images/home-icon.svg" alt="Home"></a></li>
-        <li><a href=""><img src="/images/search-icon.svg" alt="Search"></a></li>
-        <li><a href=""><img src="/images/bookshelf-icon.svg" alt="Bookshelf"></a></li>
-        <li><a href=""><img src="/images/community-icon.svg" alt="Community"></a></li>
-        </ul>
-    </nav>
 </body>
 </html>
