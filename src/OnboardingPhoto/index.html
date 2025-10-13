@@ -14,33 +14,33 @@
 <body class="bg-[#1D1D1D]">
         <!--Logo-->
     <header class="flex justify-center items-center mt-[88px]">
-        <img class="w-[4.3rem;] h-[4.3125rem] mb-[1.44rem]" 
+        <img class="w-[10vw] h-[10vw] min-w-[6rem] min-h-[6rem] max-w-[18rem] max-h-[18rem]"
             src="/images/Ellipse 1.svg" alt="Logo">
     </header>
-    <!--PhotoUpload-->
-    <section class="flex justify-center ">
-        <div class="flex-col items-center">
-        <p class="font-[poppins] text-[#E0E0E0] text-[0.875rem] pb-[0.69rem] text-center mt-[1.44 rem] mb-[1.56rem]">Bættu við prófílmynd </p>
-        <img src="/images/Profilesqr.png" alt="Profile Picture">
 
-        <p class="font-[poppins] text-[#E0E0E0] text-[0.875rem] pb-[0.69rem] text-center mt-[1.75rem]">eða</p>
-        <p class="font-[poppins] text-[#E0E0E0] text-[0.875rem] pb-[0.69rem] text-center mb-[3.31rem]">Veldu eina af þessum myndum</p>
+    <!--Photo Upload section-->
+    <section class="flex justify-center ">
+        <div class="flex flex-col items-center">
+        <p class="font-[poppins] text-[#E0E0E0] text-[0.875rem] pb-[0.69rem] text-center mt-[1.44rem] mb-[1.56rem] md:text-xl">Bættu við prófílmynd </p>
+        <img class="flex items-center-safe" src="/images/Profilesqr.png" alt="Profile Picture">
+        <p class="font-[poppins] text-[#E0E0E0] text-[0.875rem] pb-[0.69rem] text-center mt-[1.75rem] md:text-xl">eða</p>
+        <p class="font-[poppins] text-[#E0E0E0] text-[0.875rem] pb-[0.69rem] text-center mb-[3.31rem] md:text-xl">Veldu eina af þessum myndum</p>
         </div>
     </section>
     <!--3 profile ilustrations-->
     <main class="flex justify-center gap-[2.37rem]">
-    <img src="/images/face1.png" alt ="Ilustration 1">
-    <img src="/images/face2.png" alt ="Ilustration 1">
-    <img src="/images/face3.png" alt ="Ilustration 1">
+    <img class="md:w-25 cursor-pointer transition-transform hover:scale-110" src="/images/face1.png" alt ="Ilustration 1" onclick="selectImage('/images/face1.png')">
+    <img class="md:w-25 cursor-pointer transition-transform hover:scale-110"  src="/images/face2.png" alt ="Ilustration 1"onclick="selectImage('/images/face2.png')">
+    <img class="md:w-25 cursor-pointer transition-transform hover:scale-110" src="/images/face3.png" alt ="Ilustration 1"onclick="selectImage('/images/face3.png')">
     </main>
     <!--Confirm button-->
             <div class="flex justify-center">
          <a href="../Onboarding/index.html">
-            <button class="w-[14.3125rem] h-[2.875rem] bg-[#DE8417] rounded-[1.5rem] mt-[1.5rem] font-[poppins] text-[#E0E0E0]"> 
+            <button class="w-[clamp(14.31rem,20vw,20rem)]  h-[clamp(2.8rem,3.5vw,3.5rem)] bg-[#DE8417] rounded-[1.5rem] mt-[1.5rem] font-[poppins] text-[#E0E0E0] md:text-xl"> 
             Staðfesta
             </button>
         </a>
         </div>
-   
+   <script src="index.js"></script>
 </body>
 </html>

@@ -13,11 +13,23 @@ if (train) {
         }
         requestAnimationFrame(move);
     }
-    train.addEventListener("mouseenter", function () {
-        speed_1 = 0;
-    });
-    train.addEventListener("mouseleave", function () {
-        speed_1 = 0.5;
-    });
     move();
+}
+var train2 = document.getElementById("book-train-2");
+if (train2) {
+    // Clone all books once automatically for seamless loop
+    train2.innerHTML += train2.innerHTML;
+    var contentWidth_1 = train2.scrollWidth / 2;
+    var position2_1 = contentWidth_1; // Start offscreen to left
+    var speed2_1 = 0.5;
+    function move2() {
+        position2_1 += speed2_1; // Move to the right
+        train2.style.transform = "translateX(".concat(position2_1, "px)");
+        // Reset once full loop completes
+        if (position2_1 >= 0) {
+            position2_1 = -contentWidth_1;
+        }
+        requestAnimationFrame(move2);
+    }
+    move2();
 }

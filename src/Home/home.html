@@ -13,78 +13,86 @@
 <body class="bg-[#1D1D1D]">
     <!--Logo-->
     <header class="flex justify-center items-center mt-[88px]">
-        <img class="w-[145px] h-[145px]" 
+        <img id="profile" class="w-[145px] h-[145px]" 
             src="/images/User icon.svg" alt="Logo">
     </header>
     <!--Main header-->
     <div class="flex justify-center mt-[2.05rem]">
-        <h1 class="uppercase font-['Cal_Sans'] text-[#DE8417] text-[1.5rem] mb-[5.31rem]"> 
+        <h1 class="uppercase font-['Cal_Sans'] text-[#DE8417] text-[1.5rem] mb-[5.31rem] md:text-3xl"> 
             Notandanafn
         </h1>
     </div>
     <!--Currently reading paragraph-->
-    <p class="text-[1.25rem] font-['Cal_Sans'] text-[#DE8417]  flex items-centercenter ml-[2.87rem] mb-[1rem]">Að lesa: </p>
+    <p class="text-[1.25rem] font-['Cal_Sans'] text-[#DE8417] flex items-centercenter ml-[2.87rem] mb-[1rem] md:justify-center md:text-2xl md:ml-[0]">Að lesa: </p>
 
     <!--Reading section-->
-    <section class="mx-auto rounded-lg bg-gradient-to-b from-[#DE8417] to-[#121212] flex-col h-[12.44rem] w-[18.8rem] mb-[3.94rem]" >
-        <div class=" flex">
-            <img class="ml-[1.5rem] mt-[1.41rem] w-[6.5rem] h-[9.62rem]" src="/images/BookGamer2.png" alt="A book title">
-            <div class="flex-col ml-[1rem]  mt-[1.41rem]">
-            <h3 class="text-[#D2D2DA] font-['Cal_Sans'] text-[0.875rem]">Ready Player One</h3>
-            <p class="text-[#D2D2DA] font-['Poppins'] text-[0.75rem]">Eftir Sarah J. Maas</p>
-            </div>
-            <p>
-            </p>
-        </div>
-    </section>
+  <section class="m-auto rounded-lg bg-gradient-to-b from-[#85796b] to-[#121212] flex flex-col h-[clamp(12rem,25vw,16rem)] w-[clamp(18rem,40vw,25rem)] mb-[3.94rem] justify-center items-center">
+  <div class="flex">
+    <img class="ml-[1.5rem] mb-[1rem] mt-[1.41rem] w-[clamp(6rem,15vw,8rem)] h-auto" src="/images/BookGamer2.png"  alt="A book title">
+    <div class="flex flex-col ml-[1rem] mt-[1.41rem]">
+      <h3 class="text-[#D2D2DA] font-['Cal_Sans'] text-[0.875rem] md:text-2xl">Ready Player One</h3>
+      <p class="text-[#D2D2DA] font-[Poppins] text-[0.75rem] md:text-xl">Eftir Sarah J. Maas</p>
+    </div>
+  </div>
+</section>
+
 <!--Book shelves-->
-<!-- Title-->
  <!-- Title-->
-<div class="flex items-center justify-between w-full">
-  <p class="text-[#D2D2DA] font-[Poppins] text-[1.25rem] ml-[1.63rem] mb-[1rem]">
+<div class="flex items-center justify-between w-full md:justify-center">
+  <p class="text-[#D2D2DA] font-[Poppins] md:text-[2rem] text-[1.25rem] mt-[1rem] ml-[1.63rem] mb-[1rem] md:items-center md: justify-between">
    Að því að þú spilar tölvuleiki
   </p>
-    <img class="mb-[1rem] mr-[1.69rem]" src="/images/arrow-right.svg" alt="arrow">
+    <img class="mb-[1rem] mr-[1.69rem] md: justify-center md:hidden" src="/images/arrow-right.svg" alt="arrow">
 </div>
 
  <!-- Bookshelf row 1 -->
-<div class="bg-[url('/images/bookshelf.png')] bg-no-repeat bg-bottom w-full flex justify-center items-center space-x-7">
-  <img src="/images/BookGamer1.png" alt="Tomorrow tomorrow" class="mb-[0.81rem]">
-  <img src="/images/BookGamer2.png" alt="Myrkrið milli stjarnanna" class="mb-[0.81rem]">
-  <img src="/images/BookGamer3.png" alt="A Court of Thorns and Roses" class="mb-[0.81rem]">
-</div>
-
-<!-- Bookshelf row 2 -->
-<!-- Title-->
-<div class="flex items-center justify-between w-full mt-[3rem]">
-  <p class="text-[#D2D2DA] font-[Poppins] text-[1.25rem] ml-[1.63rem] mb-[1rem]">
-    Top-picks vikunnar
+<section class="flex  flex-col justify-center items-center">
+  <div class="flex justify-center items center gap-x-[clamp(2rem,5vw,3rem)]">
+  <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/BookGamer1.png" alt="Krákuveisla">
+  <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/BookGamer2.png" alt="Hunger Games">
+  <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/BookGamer3.png" alt="Litlu dauðarnir">
+ </div>
+<div class="">
+  <img class="w-[clamp(22rem,80vw,60rem)] h-auto"src="/images/bookshelf.png" alt="bookshelf">
+  </div>
+  </section>
+<div class="flex items-center justify-between w-full md:justify-center">
+  <p class="text-[#D2D2DA] font-[Poppins]  md:text-[2rem] text-[1.25rem] mt-[1rem] ml-[1.63rem] mb-[1rem] md:items-center md: justify-between">
+   Top-picks vikunnar
   </p>
-    <img class="mb-[1rem] mr-[1.69rem]" src="/images/arrow-right.svg" alt="arrow">
+    <img class="mb-[1rem] mr-[1.69rem] md: justify-center md:hidden" src="/images/arrow-right.svg" alt="arrow">
 </div>
 
-<div class="bg-[url('/images/bookshelf.png')] bg-no-repeat bg-bottom w-full flex justify-center items-center space-x-7">
-  <img src="/images/TopPicks1.png" alt="Krákuveisla" class="mb-[0.81rem]">
-  <img src="/images/TopPick2.png" alt="Hunger Games" class="mb-[0.81rem]">
-  <img src="/images/TopPick3.png" alt="Litlu dauðarnir" class="mb-[0.81rem]">
-</div>
+   <!-- Bookshelf row 2 -->
+<section class="flex  flex-col justify-center items-center mt-[1rem]">
+  <div class="flex justify-center items center gap-x-[clamp(2rem,5vw,3rem)]">
+  <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/TopPicks1.png" alt="Krákuveisla">
+  <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/TopPick2.png" alt="Hunger Games">
+  <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/TopPick3.png" alt="Litlu dauðarnir">
+ </div>
+<div>
+  <img class="w-[clamp(22rem,80vw,60rem)] h-auto"src="/images/bookshelf.png" alt="bookshelf">
+  </div>
+  </section>
 
-<!-- Bookshelf row 3 -->
-<!-- Title-->
-<div class="flex items-center justify-between w-full mt-[3rem]">
-  <p class="text-[#D2D2DA] font-[Poppins] text-[1.25rem] ml-[1.63rem] mb-[1rem]">
-    Haustbækur
+<div class="flex items-center justify-between w-full md:justify-center ">
+  <p class="text-[#D2D2DA] font-[Poppins] md:text-[2rem] mt-[1rem] text-[1.25rem] ml-[1.63rem] mb-[1rem] md:items-center md: justify-between">
+   Haustbækur
   </p>
-    <img class="mb-[1rem] mr-[1.69rem]" src="/images/arrow-right.svg" alt="arrow">
+    <img class="mb-[1rem] mr-[1.69rem] md: justify-center md:hidden" src="/images/arrow-right.svg" alt="arrow">
 </div>
 
-
-<div class="bg-[url('/images/bookshelf.png')] bg-no-repeat bg-bottom w-full flex justify-center items-center space-x-7 mb-[10rem]">
-  <img src="/images/HaustBook.png" alt="Fourth Wing" class="mb-[0.81rem]">
-  <img src="/images/HaustBook2.png" alt="The Other Boleyn Girl" class="mb-[0.81rem]">
-  <img src="/images/HaustBook3.png" alt="To all the Boys I Loved Before" class="mb-[0.81rem]">
-</div>
-
+   <!-- Bookshelf row 3 -->
+<section class="flex  flex-col justify-center items-center">
+  <div class="flex justify-center items center gap-x-[clamp(2rem,5vw,3rem)]">
+  <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/TopPicks1.png" alt="Krákuveisla">
+  <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/TopPick2.png" alt="Hunger Games">
+  <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/TopPick3.png" alt="Litlu dauðarnir">
+ </div>
+<div >
+  <img class="w-[clamp(22rem,80vw,60rem)] h-auto mb-[10rem]"src="/images/bookshelf.png" alt="bookshelf">
+  </div>
+  </section>
 <!-- Bottom navigation (mobile) -->
 <nav class="md:hidden bg-[#121212] h-[56px] py-[12px] fixed bottom-0 flex justify-center items-center w-full">
   <ul class="flex justify-center items-center gap-[64px]">
@@ -104,6 +112,6 @@
     <li><a href="/src/Community/community.html" class="font-bruno text-[#D2D2DA] text-sm">Samfélag</a></li>
   </ul>
 </nav>
-
+<script src="home.js"></script>
  </body>
 </html>
