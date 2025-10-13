@@ -5,31 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
     <title>Landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Cal+Sans&family=Fascinate&family=Gurajada&family=Jaro:opsz@6..72&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="bg-[#1D1D1D]">
     <!--Logo-->
     <header class="flex justify-center items-center mt-[88px]">
-        <img class="w-[145px] h-[145px]" 
+        <img class="w-[10vw] h-[10vw] min-w-[6rem] min-h-[6rem] max-w-[18rem] max-h-[18rem]" 
             src="/images/Ellipse 1.svg" alt="Logo">
     </header>
     <!--Book carousel section-->
-    <section class="grid grid-cols-3 gap-y-[45px] place-items-center py-20 px-12">
-        <img src="/images/Hin-odaudu.png" alt="Hin ódauðu">
-        <img src="/images/celestial-monsters.png" alt="Celestial Monsters">
-        <img src="/images/do-not-disturb.png" alt="Do Not Disturb">
+    <section class="overflow-hidden w-full relative place-items-center pt-[5rem] whitespace-nowrap animate-book-scroll">
+        <div id="book-train" class="whitespace-nowrap mx-w-[600px]">
+        <img class="inline-block mr-[3rem]"  src="/images/Hin-odaudu.png" alt="Hin ódauðu">
+        <img  class="inline-block mr-[3rem]"   src="/images/hunger-games-1.png" alt="Celestial Monsters">
+        <img   class="inline-block mr-[3rem]"   src="/images/do-not-disturb.png" alt="Do Not Disturb">
 
-        <img src="/images/tilgangur-unglingsins.png" alt="Leitin að tilgangi unglingsins">
-        <img src="/images/Kynsegin.png" alt="Kynsegin Endurminningar">
-        <img src="/images/Pax-draugurinn.png" alt="PAX Draugurinn">
+        <img  class="inline-block mr-[3rem]"  src="/images/tilgangur-unglingsins.png" alt="Leitin að tilgangi unglingsins">
+        <img  class="inline-block mr-[3rem]"   src="/images/Kynsegin.png" alt="Kynsegin Endurminningar">
+        <img   class="inline-block mr-[3rem]"  src="/images/Pax-draugurinn.png" alt="PAX Draugurinn">
+
+        <img class="inline-block mr-[3rem]"   src="/images/TopPicks1.png" alt="Hin ódauðu">
+        <img  class="inline-block mr-[3rem]"  src="/images/TopPick3.png" alt="Celestial Monsters">
+        <img  class="inline-block mr-[3rem]"   src="/images/TopPick2.png" alt="Do Not Disturb">
+        
+        
+        <img  class="inline-block mr-[3rem]"   src="/images/HaustBook2.png" alt="Hin ódauðu">
+        <img  class="inline-block mr-[3rem]"   src="/images/HaustBook3.png" alt="Celestial Monsters">
+        <img   class="inline-block mr-[3rem]"  src="/images/HaustBook.png" alt="Do Not Disturb">
+
+                
+        <img  class="inline-block mr-[3rem]"   src="/images/summer-i-turned-pretty.png" alt="Hin ódauðu">
+        <img  class="inline-block mr-[3rem]"   src="/images/kingdom-of-the-wicked.png" alt="Celestial Monsters">
+        <img   class="inline-block mr-[3rem]"  src="/images/BookGamer2.png" alt="Do Not Disturb">
+        </div>
     </section>
-    <!--Buttons-->
-    <div class="flex justify-center items-center flex-col gap-[1.31rem]">
-        <button class="bg-[#DE8417] w-[14rem] h-[3rem] rounded-3xl">
-            <a href="LogInPage/index.html" ><p class="font-[poppins] text-[#E0E0E0]">Búa til aðgang</p> </a>
-        </button>
-        <button class="bg-[#DE8417] w-[14rem] h-[3rem] rounded-3xl">
-            <p class="font-[poppins] text-[#E0E0E0]">Skoða</p>
-        </button>
-    </div>
+
+<!--Second row of books-->
+        <section class="overflow-hidden w-full relative gap-y-[45px] place-items-center pt-10 pb-[5rem]">
+        <div id="book-train-2" class="flex space-x-10 ">
+        
+        <img  src="/images/song-of-achilles.png" alt="Hin ódauðu">
+        <img  src="/images/sol-ris-a-slattudegi.png" alt="Celestial Monsters">
+        <img  src="/images/smayndasmidurinn.png" alt="Do Not Disturb">
+        
+
+        <img src="/images/skjaldbokur.png" alt="Leitin að tilgangi unglingsins">
+        <img  src="/images/sjo-eiginmenn.png" alt="Kynsegin Endurminningar">
+        <img  src="/images/secret-of-secrets.png" alt="PAX Draugurinn">
+
+        <img src="/images/korkusaga.png" alt="Hin ódauðu">
+        <img src="/images/celestial-monsters.png" alt="Celestial Monsters">
+        <img  src="/images/nordanvindurinn.png" alt="Do Not Disturb">
+
+        
+        <img  src="/images/litlu-daudarnir.png" alt="Hin ódauðu">
+        <img  src="/images/Hunger-games1.png" alt="Celestial Monsters">
+        <img  src="/images/do-not-disturb.png" alt="Do Not Disturb">
+
+        </div>
+    </section>
+    <!--Button-->
+ <div class="flex justify-center items-center flex-col gap-[1.31rem] mb-[10rem]">
+    <a href="LogInPage/index.html"
+       class="bg-[#DE8417] w-[clamp(14rem,40vw,20rem)] h-[clamp(3rem,5vw,3rem)]
+              rounded-3xl flex justify-center items-center">
+        <p class="font-[poppins] text-[#E0E0E0]">
+            Búa til aðgang
+        </p>
+    </a>
+</div>
+
+
+ <script src="/src/main.js"></script>
+<script src="/books.js"></script>
 </body>
 </html>
