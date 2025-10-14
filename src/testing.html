@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../output.css" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <!--Bruno Ace font-->
@@ -12,99 +12,95 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Cal+Sans&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Pirata+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>A Court of Thorns and Roses</title>
+    <title>Bókahilla</title>
 </head>
+
+<nav id="mobile-menu" class="hidden fixed top-[72px] left-0 w-full bg-[#121212] text-white z-50">
+  <ul class="flex flex-col items-center gap-6 py-6 font-['Bruno_Ace']">
+    <li class="text-body">Heim</li>
+    <li class="text-body">Bókahilla</li>
+    <li class="text-body">Samfélag</li>
+  </ul>
+</nav>
+
 
 <body class="bg-background">
 
-   <!--Created gap to keep space under navbar-->
-   <div class="h-15"></div> 
-
-    <!--Container for all visible content-->
-    <div class="w-full max-w-[640px] mx-auto px-4">
-
-        <!--Container for book cover and title info-->
-        <div class="w-[90%] md:w-[80%] mx-auto flex flex-col items-center md:flex-row md:items-start md:justify-center">
-            <img src="/images/a-court-of-thorns-and-roses.png" 
-                alt="" 
-                class="w-40 h-auto md:w-48">
-            <!--Title and author textbox-->
-            <section class="mt-6 md:mt-0 md:ml-5 flex flex-col">
-                <div class="text-center md:text-left">
-                    <h1 class="font-bruno text-body text-xl leading-tight">A Court of Thorns <br>
-                        and Roses
-                    </h1>
-                    <h2 class="font-poppins text-body text-base pt-2">Eftir Sarah J. Maas</h2>
-                </div>
-                <div class="flex items-center justify-center md:justify-start space-x-2 mt-6 md:mt-16">
-                    <img src="/images/pages-icon.png" alt="Book pages icon">
-                    <p class="font-poppins text-body text-sm md:text-base">128 síður</p>
-                </div>
-            </section>
+   <header class="flex items-center place-content-evenly w-full h-[72px] bg-[#121212] fixed">
+        <img src="/images/logo-orange.svg" alt="Logo" class="absolute left-[24px] w-[48px]">
+        <div class="hidden lg:block">
+            <ul class="flex gap-[4rem] font-['Bruno_Ace'] pl-20">
+                <li class="text-body">Heim</li>
+                <li class="text-body">Bókahilla</li>
+                <li class="text-body">Samfélag</li>
+            </ul>
         </div>
-
-        <!--Dropdown button-->
-        <div class="w-[90%] md:w-[80%] mx-auto flex justify-center mt-11">
-            <select name="bookshelf-options" class="bg-theme w-32 h-8 rounded-3xl px-4 font-poppins text-base text-body">
-                <option value="wantToRead">Vil lesa</option>
-                <option value="read">Lesið</option>
-                <option value="recommendations">Mæli með</option>
-            </select>
+        <div class="relative">
+            <img src="/images/search-small.svg" alt="Search"
+                class="absolute left-10 top-1/2 -translate-y-1/2 w-4">
+            <input type="text" placeholder="Leita"
+                class=" pl-10 flex items-center text-theme font-[Poppins] border-2 border-theme w-[clamp(160px,50vw,400px)] h-[32px] rounded-2xl ml-[24px] mr-[24px] focus:outline-none">
         </div>
+        <img src="/images/hamburger-icon.svg" alt="Hamburger" class="absolute right-[16px] lg:hidden">
+        <img src="/images/User icon.svg" alt="user icon" class="absolute right-[24px] w-[40px] hidden lg:block">
+    </header>
+  <div class="h-15"></div>
 
-        <!--Boxes with icons-->
-        <div class="w-[90%] md:w-[80%] mx-auto mt-11 mb-11 border-t border-b border-body">
-            <div class="flex justify-center divide-x divide-body">
-                <!--Book icon-->
-                <div class="p-6 md:p-8 flex flex-col items-center">
-                    <a href="about-book.html"><img src="/images/orange-about-book-icon.png" alt="Book icon" class="p-2"></a>
-                    <p class="text-body font-poppins text-sm">Um bókina</p>
-                </div>
-                <!--Review icon-->
-                <div class="p-6 md:p-8 flex flex-col items-center">
-                    <a href="book-reviews.html"><img src="/images/review-icon.png" alt="Review icon" class="p-2"></a>
-                    <p class="text-body font-poppins text-sm">Umsagnir</p>
-                </div>
-                <!--Glasses icon-->
-                <div class="p-6 md:p-8 flex flex-col items-center">
-                    <a href="https://www.penninn.is/is/book/court-thorns-and-roses"><img src="/images/glasses.png" alt="Glasses icon" class="p-2"></a>
-                    <p class="text-body font-poppins text-sm">Lestu í dag</p>
-                </div>
-            </div>
-        </div>
+  <div class="flex flex-col justify-center items-center w-full">
+    <p class="text-theme text-4xl font-bruno ml-[5%] pt-6.25">BÓKAHILLA</p>
 
-        <!--About book text-->
-        <div class="w-[90%] md:w-[80%] mx-auto">
-            <p class="font-[Poppins] text-base text-body text-justify leading-7">
-                When nineteen-year-old huntress Feyre kills a wolf in the woods, a terrifying 
-                creature arrives to demand retribution. Dragged to a treacherous magical land 
-                she knows about only from legends, Feyre discovers that her captor is not truly 
-                a beast, but one of the lethal, immortal faeries who once ruled her world. 
-                <br>
-                <br>
-                At least, he’s not a beast all the time.
-                <br>
-                <br>
-                As she adapts to her new home, her feelings for the faerie, Tamlin, transform 
-                from icy hostility into a fiery passion that burns through every lie she’s been 
-                told about the beautiful, dangerous world of the Fae. But something is not right 
-                in the faerie lands. An ancient, wicked shadow is growing, and Feyre must find a 
-                way to stop it, or doom Tamlin—and his world—forever.
-                <br>
-                <br>
-                From bestselling author Sarah J. Maas comes a seductive, breathtaking book that blends 
-                romance, adventure, and faerie lore into an unforgettable read.
-                <br>
-                <br>
-                <b>Útgefandi:</b> Mál og menning
-                <br> 
-                <b>Útgáfuár:</b> 2021
-            </p>
-        </div>
+    <!--Navigation buttons-->
+    <div class="flex justify-center items-center space-x-4 mt-24">
+      <button class="border-3 border-theme w-24 h-[2.5rem] rounded-3xl md:w-[8rem]">
+        <a href="bookshelf.html"><p class="font-[Poppins] text-sm text-theme md:text-lg">Vil lesa</p></a>
+      </button>
+      <button class="bg-theme w-[6rem] h-[2.5rem] rounded-3xl md:w-[8rem]">
+        <a href="bookshelf-read.html"><p class="font-[Poppins] text-sm text-body md:text-lg">Lesið</p></a>
+      </button>
+      <button class="border-3 border-theme w-[6rem] h-[2.5rem] rounded-3xl md:w-[8rem]">
+        <a href="bookshelf-recommendations.html"><p class="font-[Poppins] text-sm text-theme md:text-lg">Mæli með</p></a>
+      </button>
     </div>
 
-    <!--Created gap to keep space under content-->
-    <div class="h-15"></div> 
-    
+    <!--Bookshelf row 1-->
+  <div class="bg-[url('/images/bookshelf-desktop.png')] w-[90%] md:w-[80%] lg:w-[70%] mx-auto bg-no-repeat bg-bottom bg-contain
+            grid grid-cols-3 md:grid-cols-4 gap-6 md:gap-8 mt-32">
+  <img src="/images/year-of-the-witching.png" class="pb-[2%] w-28 md:w-36 lg:w-40 h-auto">
+  <img src="/images/do-not-disturb.png" class="pb-[2%] w-28 md:w-36 lg:w-40 h-auto">
+  <img src="/images/book-desktop.png" class="pb-[2%] w-28 md:w-36 lg:w-40 h-auto">
+  <img src="/images/book-desktop.png" class="pb-[2%] w-28 md:w-36 lg:w-40 h-auto hidden md:block">
+</div>
+
+
+    <!--Bookshelf row 2-->
+    <div class="bg-[url('/images/bookshelf-desktop.png')] w-[70%] mx-auto bg-no-repeat bg-bottom bg-contain
+            grid grid-cols-3 md:grid-cols-4 place-items-end gap-[6%] mt-32">
+      <img src="/images/year-of-the-witching.png" alt="The Year of the Witching" class="pb-[2%] w-24 md:w-1/6">
+      <img src="/images/do-not-disturb.png" alt="Do Not Disturb" class="pb-[2%] w-24 md:w-1/6">
+      <img src="/images/book-desktop.png" alt="A Court of Thorns and Roses" class="pb-[2%] w-24 md:w-1/6">
+      <img src="/images/book-desktop.png" alt="A Court of Thorns and Roses" class="pb-[2%] w-24 md:w-1/6 hidden md:block">
+    </div>
+
+    <!--Bookshelf row 3-->
+     <div class="bg-[url('/images/bookshelf-desktop.png')] w-[70%] mx-auto bg-no-repeat bg-bottom bg-contain
+            grid grid-cols-3 md:grid-cols-4 place-items-end gap-[6%] mt-32">
+      <img src="/images/year-of-the-witching.png" alt="The Year of the Witching" class="pb-[2%] w-24 md:w-1/6">
+      <img src="/images/do-not-disturb.png" alt="Do Not Disturb" class="pb-[2%] w-24 md:w-1/6">
+      <img src="/images/book-desktop.png" alt="A Court of Thorns and Roses" class="pb-[2%] w-24 md:w-1/6">
+      <img src="/images/book-desktop.png" alt="A Court of Thorns and Roses" class="pb-[2%] w-24 md:w-1/6 hidden md:block">
+    </div>
+  </div>
+
+
+  <script>
+  const hamburgerBtn = document.getElementById('hamburger-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  hamburgerBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
 </body>
+
 </html>
