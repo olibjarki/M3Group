@@ -5,23 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../output.css" rel="stylesheet">
     <title>Home</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Cal+Sans&family=Fascinate&family=Gurajada&family=Jaro:opsz@6..72&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- All fonts -->
+<link href="https://fonts.googleapis.com/css2?
+family=Alfa+Slab+One&
+family=Bruno+Ace&
+family=Cal+Sans&
+family=Fascinate&
+family=Gurajada&
+family=Jaro:opsz@6..72&
+family=Outfit:wght@100..900&
+family=Poppins:wght@400;500;600;700&
+display=swap" rel="stylesheet">
 </head>
-<body class="bg-[#1D1D1D]">
-    <!--Logo-->
-    <header class="flex justify-center items-center mt-[88px]">
-        <img id="profile" class="w-[145px] h-[145px]" 
-            src="/images/User icon.svg" alt="Logo">
+<body class="bg-[#1D1D1D] pt-10 px-[2rem]">
+    
+<!--Nav bar-->
+    <header class="flex items-center place-content-evenly w-full h-[72px] left-0 top-0 z-index-[1000] bg-[#121212] fixed z-[100]">
+        <img src="/images/logo-orange.svg" alt="Logo" class="absolute left-[24px] w-[48px]">
+     <div class="hidden lg:block">
+    <ul class="flex gap-[4rem] font-['Bruno_Ace'] pl-20">
+        <li>
+            <a href="../Home/home.html" class="text-[#D2D2DA] hover:text-[#DE8417]">Heim</a>
+        </li>
+        <li>
+            <a href="../Bookshelf/bookshelf.html" class="text-[#D2D2DA] hover:text-[#DE8417]">Bókahilla</a>
+        </li>
+        <li>
+            <a href="../Community/community.html" class="text-[#D2D2DA] hover:text-[#DE8417]">Samfélag</a>
+        </li>
+    </ul>
+</div>
+        <div class="relative">
+            <img src="/images/search-small.svg" alt="Search"
+                class="absolute left-10 top-1/2 -translate-y-1/2 w-4">
+            <input type="text" placeholder="Leita"
+                class=" pl-10 flex items-center text-[#DE8417] font-[Poppins] border-2 border-[#DE8417] w-[clamp(160px,50vw,400px)] h-[32px] rounded-2xl ml-[24px] mr-[24px] focus:outline-none">
+        </div>
+        <img src="/images/hamburger-icon.svg" alt="Hamburger" class="absolute right-[16px] lg:hidden">
+        <img src="/images/User icon.svg" alt="user icon" class="absolute right-[24px] w-[40px] hidden lg:block">
     </header>
+
+    <!--User icon-->
+
+    <section class="flex justify-center items-center">
+        <img id="profile" class="w-[145px] h-[145px] mt-[10rem]" 
+            src="/images/User icon.svg" alt="Logo">
+    </section>
+
     <!--Main header-->
     <div class="flex justify-center mt-[2.05rem]">
-        <h1 class="uppercase font-['Cal_Sans'] text-[#DE8417] text-[1.5rem] mb-[5.31rem] md:text-3xl"> 
-            Notandanafn
+        <h1 class="uppercase font-['Bruno_Ace'] text-[#DE8417] text-[1.5rem] mb-[5.31rem] md:text-3xl"> 
+            Notendanafn
         </h1>
     </div>
+
+
     <!--Currently reading paragraph-->
     <p class="text-[1.25rem] font-['Cal_Sans'] text-[#DE8417] flex items-centercenter ml-[2.87rem] mb-[1rem] md:justify-center md:text-2xl md:ml-[0]">Að lesa: </p>
 
@@ -39,79 +81,60 @@
 <!--Book shelves-->
  <!-- Title-->
 <div class="flex items-center justify-between w-full md:justify-center">
-  <p class="text-[#D2D2DA] font-[Poppins] md:text-[2rem] text-[1.25rem] mt-[1rem] ml-[1.63rem] mb-[1rem] md:items-center md: justify-between">
+  <p class="text-[#D2D2DA] font-[Poppins] text-[1.25rem] mt-[1rem] ml-[1.63rem] mb-[2rem] md:items-center md: justify-between md:text-[2rem]">
    Að því að þú spilar tölvuleiki
   </p>
-    <img class="mb-[1rem] mr-[1.69rem] md: justify-center md:hidden" src="/images/arrow-right.svg" alt="arrow">
 </div>
 
  <!-- Bookshelf row 1 -->
-<section class="flex  flex-col justify-center items-center">
-  <div class="flex justify-center items center gap-x-[clamp(2rem,5vw,3rem)]">
-  <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/BookGamer1.png" alt="Krákuveisla">
-  <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/BookGamer2.png" alt="Hunger Games">
-  <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/BookGamer3.png" alt="Litlu dauðarnir">
+<section class="relative flex flex-col justify-center items-center">
+  <div class="relative flex justify-center items-center gap-x-[clamp(2rem,5vw,2rem)] mb-[-0.5rem]">
+  <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/gamerbook1.png" alt="Krákuveisla">
+  <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/gamerbook2.png" alt="Hunger Games">
+  <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/gamerbook3.png" alt="Litlu dauðarnir">
+  <img  class="hidden md:block w-[clamp(5rem,20vw,12rem)]" src="/images/Masters of Doom2.png" alt="Litlu dauðarnir">
  </div>
-<div class="">
-  <img class="w-[clamp(22rem,80vw,60rem)] h-auto"src="/images/bookshelf.png" alt="bookshelf">
-  </div>
+    <!--Shelf-->
+  <img class="w-[clamp(22rem,120vw,80rem)] h-[2rem] z-[-3]"src="/images/bookshelf.png" alt="bookshelf">
   </section>
+
+
 <div class="flex items-center justify-between w-full md:justify-center">
-  <p class="text-[#D2D2DA] font-[Poppins]  md:text-[2rem] text-[1.25rem] mt-[1rem] ml-[1.63rem] mb-[1rem] md:items-center md: justify-between">
+  <p class="text-[#D2D2DA] font-[Poppins]  text-[1.25rem] mt-[3rem] ml-[1.63rem] mb-[3rem] md:items-center md: justify-between md:text-[2rem] ">
    Top-picks vikunnar
   </p>
-    <img class="mb-[1rem] mr-[1.69rem] md: justify-center md:hidden" src="/images/arrow-right.svg" alt="arrow">
 </div>
 
    <!-- Bookshelf row 2 -->
 <section class="flex  flex-col justify-center items-center mt-[1rem]">
-  <div class="flex justify-center items center gap-x-[clamp(2rem,5vw,3rem)]">
-  <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/TopPicks1.png" alt="Krákuveisla">
-  <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/TopPick2.png" alt="Hunger Games">
-  <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/TopPick3.png" alt="Litlu dauðarnir">
+  <div class="flex justify-center items-center gap-x-[clamp(2rem,5vw,2rem)] mb-[-0.5rem] z-">
+  <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/alfheimar.png" alt="Alfheimar">
+  <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/drengurinn (1).png" alt="drengurinn">
+  <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/Orbital (1).png" alt="Orbital">
+  <img  class=" hidden md:block w-[clamp(5rem,20vw,12rem)] " src="/images/secret-of-secrets.png" alt="Litlu dauðarnir">
  </div>
-<div>
-  <img class="w-[clamp(22rem,80vw,60rem)] h-auto"src="/images/bookshelf.png" alt="bookshelf">
-  </div>
+  <!--Shelf-->
+  <img class="w-[clamp(22rem,120vw,80rem)] h-[2rem] z-[-3]"src="/images/bookshelf.png" alt="bookshelf">
   </section>
 
 <div class="flex items-center justify-between w-full md:justify-center ">
-  <p class="text-[#D2D2DA] font-[Poppins] md:text-[2rem] mt-[1rem] text-[1.25rem] ml-[1.63rem] mb-[1rem] md:items-center md: justify-between">
+  <p class="text-[#D2D2DA] font-[Poppins] mt-[3rem] text-[1.25rem] ml-[1.63rem] mb-[3rem] md:items-center md: justify-between md:text-[2rem] ">
    Haustbækur
   </p>
-    <img class="mb-[1rem] mr-[1.69rem] md: justify-center md:hidden" src="/images/arrow-right.svg" alt="arrow">
 </div>
 
    <!-- Bookshelf row 3 -->
-<section class="flex  flex-col justify-center items-center">
-  <div class="flex justify-center items center gap-x-[clamp(2rem,5vw,3rem)]">
-  <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/TopPicks1.png" alt="Krákuveisla">
-  <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/TopPick2.png" alt="Hunger Games">
-  <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/TopPick3.png" alt="Litlu dauðarnir">
+<section class="flex flex-col justify-center items-center">
+  <div class="flex justify-center items-center gap-x-[clamp(2rem,5vw,2rem)] mb-[-0.5rem]">
+  <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/Lifsins Blod.png" alt="Krákuveisla">
+  <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/Skjaldbokur(1).png" alt="Hunger Games">
+  <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/secret-of-secrets.png" alt="Litlu dauðarnir">
+  <img  class=" hidden md:block w-[clamp(5rem,20vw,12rem)]" src="/images/Ast i oskilum.png" alt="Litlu dauðarnir">
  </div>
-<div >
-  <img class="w-[clamp(22rem,80vw,60rem)] h-auto mb-[10rem]"src="/images/bookshelf.png" alt="bookshelf">
-  </div>
+    <!--Shelf-->
+  <img class="w-[clamp(22rem,120vw,80rem)] h-[2rem] mb-[20rem] z-[-3]" src="/images/bookshelf.png" alt="bookshelf">
   </section>
-<!-- Bottom navigation (mobile) -->
-<nav class="md:hidden bg-[#121212] h-[56px] py-[12px] fixed bottom-0 flex justify-center items-center w-full">
-  <ul class="flex justify-center items-center gap-[64px]">
-    <li><a href="/src/Home/home.html"><img src="/images/home-icon.svg" alt="Home"></a></li>
-    <li><a href="/src/search/search.html"><img src="/images/search-icon.svg" alt="Search"></a></li>
-    <li><a href="/src/Bookshelf/bookshelf.html"><img src="/images/bookshelf-icon.svg" alt="Bookshelf"></a></li>
-    <li><a href="/src/Community/community.html"><img src="/images/community-icon.svg" alt="Community"></a></li>
-  </ul>
-</nav>
 
-<!-- Top navigation bar (desktop) -->
-<nav class="hidden md:flex bg-[#121212] h-[56px] py-[12px] w-full justify-center items-center fixed top-0 z-50">
-  <ul class="flex justify-center items-center gap-[64px]">
-    <li><a href="/src/Home/home.html" class="font-bruno text-[#D2D2DA] text-sm">Heim</a></li>
-    <li><a href="/src/search/search.html" class="font-bruno text-[#D2D2DA] text-sm">Leita</a></li>
-    <li><a href="/src/Bookshelf/bookshelf.html" class="font-bruno text-[#D2D2DA] text-sm">Bókahilla</a></li>
-    <li><a href="/src/Community/community.html" class="font-bruno text-[#D2D2DA] text-sm">Samfélag</a></li>
-  </ul>
-</nav>
 <script src="home.js"></script>
  </body>
 </html>
