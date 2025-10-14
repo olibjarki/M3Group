@@ -17,25 +17,38 @@
 
 <body class="bg-background">
 
-    <!--Nav bar-->
-    <header class="flex items-center place-content-evenly w-full h-[72px] bg-[#121212] fixed">
-        <img src="/images/logo-orange.svg" alt="Logo" class="absolute left-[24px] w-[48px]">
-        <div class="hidden lg:block">
-            <ul class="flex gap-[4rem] font-['Bruno_Ace'] pl-20">
-                <li class="text-body">Heim</li>
-                <li class="text-body">Bókahilla</li>
-                <li class="text-body">Samfélag</li>
-            </ul>
-        </div>
-        <div class="relative">
-            <img src="/images/search-small.svg" alt="Search"
-                class="absolute left-10 top-1/2 -translate-y-1/2 w-4">
-            <input type="text" placeholder="Leita"
-                class=" pl-10 flex items-center text-theme font-[Poppins] border-2 border-theme w-[clamp(160px,50vw,400px)] h-[32px] rounded-2xl ml-[24px] mr-[24px] focus:outline-none">
-        </div>
-        <img src="/images/hamburger-icon.svg" alt="Hamburger" class="absolute right-[16px] lg:hidden">
-        <img id="profile"  src="/images/User icon.svg" alt="user icon" class="absolute right-[24px] w-[40px] hidden lg:block">
-    </header>
+<!--Nav bar-->
+  <header class="fixed top-0 left-0 w-full h-[72px] bg-[#121212] flex items-center justify-between px-6 z-[1000]">
+  <!-- Logo -->
+  <a href="../Home/home.html" class="flex items-center">
+    <img src="/images/logo-orange.svg" alt="Logo" class="w-[48px]">
+  </a>
+
+  <!-- Navigation (desktop only) -->
+  <nav class="hidden lg:block">
+    <ul class="flex gap-[4rem] font-['Bruno_Ace']">
+      <li><a href="../Home/home.html" class="text-[#D2D2DA] hover:text-[#DE8417] transition-colors">Heim</a></li>
+      <li><a href="../Bookshelf/bookshelf.html" class="text-[#D2D2DA] hover:text-[#DE8417] transition-colors">Bókahilla</a></li>
+      <li><a href="../Community/community.html" class="text-[#D2D2DA] hover:text-[#DE8417] transition-colors">Samfélag</a></li>
+    </ul>
+  </nav>
+
+  <!-- Search and icons -->
+  <div class="flex items-center gap-4">
+    <!-- Search box -->
+    <div class="relative">
+      <img src="/images/search-small.svg" alt="Search" class="absolute left-3 top-1/2 -translate-y-1/2 w-4">
+      <input type="text" placeholder="Leita"
+        class="pl-10 pr-4 text-[#DE8417] font-[Poppins] border-2 border-[#DE8417] w-[clamp(160px,50vw,400px)] h-[32px] rounded-2xl bg-transparent focus:outline-none">
+    </div>
+
+    <!-- Hamburger icon (mobile only) -->
+    <img src="/images/hamburger-icon.svg" alt="Menu" class="w-[28px] lg:hidden cursor-pointer">
+
+    <!-- User icon (desktop only) -->
+    <img src="/images/User icon.svg" alt="User icon" class="hidden lg:block w-[40px] cursor-pointer">
+  </div>
+</header>
 
 
    <!--Created gap to keep space under navbar-->
