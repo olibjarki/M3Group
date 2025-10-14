@@ -20,32 +20,53 @@ display=swap" rel="stylesheet">
 </head>
 <body class="bg-[#1D1D1D] px-[2rem]">
 
-<!--Nav bar-->
-    <header class="flex items-center place-content-evenly w-full h-[72px] bg-[#121212] fixed left-0 top-0 z-index-[1000]">
-        <img src="/images/logo-orange.svg" alt="Logo" class="absolute left-[24px] w-[48px]">
-           <div class="hidden lg:block">
-    <ul class="flex gap-[4rem] font-['Bruno_Ace'] pl-20">
-        <li>
-            <a href="../Home/home.html" class="text-[#D2D2DA] hover:text-[#DE8417]">Heim</a>
-        </li>
-        <li>
-            <a href="../Bookshelf/bookshelf.html" class="text-[#D2D2DA] hover:text-[#DE8417]">Bókahilla</a>
-        </li>
-        <li>
-            <a href="../Community/community.html" class="text-[#D2D2DA] hover:text-[#DE8417]">Samfélag</a>
-        </li>
+ <header class="fixed inset-x-0 top-0 z-50 bg-[#121212]">
+  
+  <!-- Bar -->
+  <div class="mx-auto flex h-[72px] w-full items-center justify-evenly px-6">
+    <a href="/src/Home/home.html" class="flex items-center">
+      <img src="/images/logo-orange.svg" alt="Logo" class="w-[48px]">
+    </a>
+
+    <!-- Desktop links -->
+    <div class="hidden lg:block">
+      <ul class="flex gap-[4rem] font-['Bruno_Ace']">
+        <li><a href="/src/Home/home.html" class="text-[#D2D2DA] hover:text-[#DE8417]">Heim</a></li>
+        <li><a href="/src/Bookshelf/bookshelf.html" class="text-[#D2D2DA] hover:text-[#DE8417]">Bókahilla</a></li>
+        <li><a href="/src/Community/community.html" class="text-[#D2D2DA] hover:text-[#DE8417]">Samfélag</a></li>
+      </ul>
+    </div>
+
+    <!-- Search (desktop) -->
+    <div class="relative hidden lg:block">
+      <img src="/images/search-small.svg" alt="Search" class="absolute left-3 top-1/2 -translate-y-1/2 w-4">
+      <input type="text" placeholder="Leita"
+        class="pl-10 text-[#DE8417] font-[Poppins] border-2 border-[#DE8417] w-[clamp(160px,50vw,400px)] h-[32px] rounded-2xl focus:outline-none">
+    </div>
+
+    <!-- Hamburger (mobile) -->
+    <button id="Hamburger" class="lg:hidden">
+      <img src="/images/hamburger-icon.svg" alt="Hamburger" class="w-8 h-8">
+    </button>
+  </div>
+
+  <!-- Mobile menu (drops under the bar) -->
+  <div id="mobileNav" class="hidden lg:hidden absolute inset-x-0 top-[72px] bg-[#121212]">
+    <ul class="flex flex-col gap-6 font-['Bruno_Ace'] px-6 py-6">
+      <li><a href="/src/Home/home.html" class="text-[#D2D2DA] hover:text-[#DE8417]">Heim</a></li>
+      <li><a href="/src/Bookshelf/bookshelf.html" class="text-[#D2D2DA] hover:text-[#DE8417]">Bókahilla</a></li>
+      <li><a href="/src/Community/community.html" class="text-[#D2D2DA] hover:text-[#DE8417]">Samfélag</a></li>
+      <li class="flex items-center gap-2">
+        <img src="/images/User icon.svg" alt="User" class="w-10"><p class="text-[#DE8417]">Notandanafn</p>
+      </li>
+      <div class="flex items-center justify-center">
+        <button class="border-2 border-[#DE8417] rounded-2xl w-40 h-10">
+          <p class="font-['Bruno_Ace'] text-[#DE8417]">Skrá út</p>
+        </button>
+      </div>
     </ul>
-</div>
-        </div>
-        <div class="relative">
-            <img src="/images/search-small.svg" alt="Search"
-                class="absolute left-10 top-1/2 -translate-y-1/2 w-4">
-            <input type="text" placeholder="Leita"
-                class=" pl-10 flex items-center text-[#DE8417] font-[Poppins] border-2 border-[#DE8417] w-[clamp(160px,50vw,400px)] h-[32px] rounded-2xl ml-[24px] mr-[24px] focus:outline-none">
-        </div>
-        <img src="/images/hamburger-icon.svg" alt="Hamburger" class="absolute right-[16px] lg:hidden">
-        <img id="profile" src="/images/User icon.svg" alt="user icon" class="absolute right-[24px] w-[40px] hidden lg:block">
-    </header>
+  </div>
+</header>
 
     <!--User icon-->
 
@@ -70,22 +91,22 @@ display=swap" rel="stylesheet">
     </section>
 
     <!--Currently reading paragraph-->
-    <p class="text-[1.25rem] font-['Cal_Sans'] text-[#DE8417] flex items-center ml-[2.87rem] mt-[3rem] mb-[1rem] md:justify-center md:text-2xl md:ml-0.5">Að lesa: </p>
+    <p class="text-[1.25rem] font-['Cal_Sans'] text-[#DE8417] flex items-center ml-[2.87rem] mt-[3rem] mb-[1rem] md:justify-center md:text-2xl md:ml-0.5">Er að lesa: </p>
 
     <!--Reading section-->
-    <section class="m-auto rounded-lg bg-gradient-to-b from-[#85796b] to-[#121212] flex flex-col h-[clamp(12rem,25vw,16rem)] w-[clamp(18rem,40vw,25rem)] mb-[3.94rem] justify-center items-center" >
-        <div class="flex md:flex-row">
-            <img class="ml-[1.5rem] mb-[1rem] mt-[1.41rem] w-[clamp(6rem,15vw,8rem)]  h-auto" src="/images/BookGamer2.png" alt="A book title">
-          <div class="flex-col ml-[1rem] mt-[1.41rem]">
-            <h3 class="text-[#D2D2DA] font-['Cal_Sans'] text-[0.875rem] md:text-xl">
-              Ready Player One
-            </h3>
-            <p class="text-[#D2D2DA] font-['Poppins'] text-[0.75rem] md:text-xl">
-              Eftir Sarah J. Maas
-            </p>
-          </div>
-        </div>
-    </section>
+<section class="m-auto rounded-lg bg-gradient-to-b from-[#121212] to-[#85796b] flex flex-col justify-center items-center mb-16 w-[clamp(20rem,50vw,30rem)] h-[clamp(12rem,25vw,20rem)]">
+  <div class="flex items-start p-4 md:p-6">
+    <img class="w-[clamp(6.5rem,15vw,9rem)] h-auto"  src="/images/tress-of-the-emerald-sea.png" alt="Bókarkápa">
+    <div class="ml-4">
+      <h3 class="text-[#D2D2DA] font-['Cal_Sans'] text-sm md:text-2xl">
+       Trees of the merald sea
+      </h3>
+      <p class="text-[#D2D2DA] font-[Poppins] text-xs md:text-xl">
+        Eftir Brandon Sanderson
+      </p>
+    </div>
+  </div>
+</section>
 
 <!--Book shelves-->
 
@@ -146,5 +167,7 @@ display=swap" rel="stylesheet">
   </section>
 </nav>
 <script src="index.js"></script>
+<script src="../hamburger.js"></script>
+
  </body>
 </html>
