@@ -1,4 +1,26 @@
-  function selectImage(imagePath) {
-    localStorage.setItem("selectedImage", imagePath);
-    window.location.href = "index.html"; 
-  }
+function selectImage(imagePath: string, element: HTMLElement): void {
+  // Save selected image path
+  localStorage.setItem("selectedImage", imagePath);
+
+  // Remove border from all images within <main>
+  const images = document.querySelectorAll<HTMLImageElement>("main img");
+  images.forEach((img) => {
+    img.style.border = "none";
+  });
+
+  //Border
+  (element as HTMLImageElement).style.border = "3px solid #DE8417";
+}
+
+window.onload = (): void => {
+  const selected = localStorage.getItem("selectedImage");
+  if (!selected) return;
+
+  const images = document.querySelectorAll<HTMLImageElement>("main img");
+  images.forEach((img) => {
+    // Use indexOf for compatibility (avoids includes/polyfills)
+    if (img.src.indexOf(selected) !== -1) {
+      img.style.border = "3px solid #DE8417";
+    }
+  });
+};
