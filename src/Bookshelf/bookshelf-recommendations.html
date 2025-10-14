@@ -17,6 +17,30 @@
 
 <body class="bg-background">
 
+    <!--Nav bar-->
+    <header class="flex items-center place-content-evenly w-full h-[72px] bg-[#121212] fixed">
+        <img src="/images/logo-orange.svg" alt="Logo" class="absolute left-[24px] w-[48px]">
+        <div class="hidden lg:block">
+            <ul class="flex gap-[4rem] font-['Bruno_Ace'] pl-20">
+                <li class="text-body">Heim</li>
+                <li class="text-body">Bókahilla</li>
+                <li class="text-body">Samfélag</li>
+            </ul>
+        </div>
+        <div class="relative">
+            <img src="/images/search-small.svg" alt="Search"
+                class="absolute left-10 top-1/2 -translate-y-1/2 w-4">
+            <input type="text" placeholder="Leita"
+                class=" pl-10 flex items-center text-theme font-[Poppins] border-2 border-theme w-[clamp(160px,50vw,400px)] h-[32px] rounded-2xl ml-[24px] mr-[24px] focus:outline-none">
+        </div>
+        <img src="/images/hamburger-icon.svg" alt="Hamburger" class="absolute right-[16px] lg:hidden">
+        <img src="/images/User icon.svg" alt="user icon" class="absolute right-[24px] w-[40px] hidden lg:block">
+    </header>
+
+
+   <!--Created gap to keep space under navbar-->
+   <div class="h-24"></div> 
+
     <div class="h-15"></div>
     <div class="fex-col justify-center items-center w-full">
         <p class="text-theme text-4xl font-bruno ml-[5%] pt-6.25">BÓKAHILLA</p>
@@ -56,6 +80,6 @@
     </div>
 
       <!--Create space on bottom-->
-    <div class="h-30"></div>    
+    <div class="h-24"></div>    
 </body>
 </html>
