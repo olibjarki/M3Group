@@ -7,19 +7,18 @@
     <title>Search</title>
 </head>
 <body class="bg-[#1D1D1D]">
-    <header>
-        <!--User icon-->
-        <img class="m-[24px] w-[56px] h-[56px]" src="/images/User icon.svg" alt="User icon">
-    </header>
-    <!--Search bar-->
-    <section class="flex justify-center items-center">
-        <button class="flex items-center border-2 border-[#DE8417] w-[280px] h-[34px] rounded-2xl ">
-            <img class="w-4 mx-[0.75rem]" src="/images/search-small.svg" alt="search">
-            <p class="text-[#DE8417] font-[Poppins]">Titill höfundur, ISBN</p>
+    
+    <header class="flex justify-center items-center w-full h-[72px] bg-[#121212] fixed top-0">
+        <img src="/images/logo-orange.svg" alt="Logo" class="absolute left-[16px] w-[48px]">
+        <button class="flex items-center border-2 border-[#DE8417] w-[clamp(240px,60vw,400px)] h-[32px] rounded-2xl ml-[24px] mr-[24px]">
+            <img class="w-[18px] mx-[0.75rem]" src="/images/search-small.svg" alt="search">
+            <p class="text-[#DE8417] font-[Poppins]">Leita</p>
         </button>
-    </section>
+        <img src="/images/hamburger-icon.svg" alt="Hamburger" class="absolute right-[16px]">
+    </header>
+ 
     <!--Buttons-->
-    <section class="flex justify-center items-center mt-[1.69rem] gap-[0.75rem]">
+    <section class="flex justify-center items-center gap-[0.75rem] mt-[100px]">
         <!--Blaðsíðufjöldi-->
         <button class=" flex justify-center items-center w-[6.65rem] h-[1.625rem] border-2 border-[#DE8417] rounded-[1.5rem] pt-[0.31rem] pb-[0.31rem] ">
             <p class=" text-sm font-['Poppins'] text-[0.625rem] text-[#DE8417] pl-[0.62rem]">
@@ -81,6 +80,7 @@
         </div>
     </section>
     <!--Navigation-->
+    <!--
     <nav class="bg-[#121212] h-[56px] py-[12px] fixed bottom-0 flex justify-center items-center w-full">
         <ul class="flex justify-center items-center gap-[64px]">
         <li><a href="/src/Home/home.html"><img src="/images/home-icon.svg" alt="Home"></a></li>
@@ -89,5 +89,6 @@
         <li><a href="/src/Community/community.html"><img src="/images/community-icon.svg" alt="Community"></a></li>
         </ul>
     </nav>
+    -->
 </body>
 </html>
