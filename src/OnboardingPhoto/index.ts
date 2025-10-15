@@ -1,5 +1,5 @@
 function selectImage(imagePath: string, element: HTMLElement): void {
-  // Save selected image path
+  // Save selected image
   localStorage.setItem("selectedImage", imagePath);
 
   // Remove border from all images within <main>
