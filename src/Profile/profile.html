@@ -18,60 +18,77 @@ family=Poppins:wght@400;500;600;700&
 display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bruno+Ace&family=Cal+Sans&family=Fascinate&family=Gurajada&family=Jaro:opsz@6..72&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
-<body class="bg-[#1D1D1D] px-[2rem]">
+<body class="bg-[#1D1D1D]">
+    <!--Nav Bar-->
+    <header>
+        <nav class=" flex items-center place-content-evenly w-full h-[72px] bg-[#121212] fixed z-50">
+            <a class="flex items-center mr-10" href="/src/Home/home.html">
+                <img src="/images/logo-orange.svg" alt="Logo" class="absolute left-[24px] w-[48px]">
+            </a>
+            <div id="mobileNav" class="flex absolute left-0 top-16 w-full text-2xl bg-[#121212] h-84 hidden lg:hidden">
+                <ul class="flex lg:flex-row flex-col gap-6 lg:gap-[4rem] font-['Bruno_Ace'] px-10 lg:px-20 pt-10 w-full">
+                    <li class="text-[#D2D2DA] hover:text-[#DE8417]">
+                        <a href="/src/Home/home.html">Heim</a>
+                    </li>
+                    <li class="text-[#D2D2DA] hover:text-[#DE8417]">
+                        <a href="/src/Bookshelf/bookshelf.html">Bókahilla</a>
+                    </li>
+                    <li class="text-[#D2D2DA] hover:text-[#DE8417]">
+                        <a href="/src/Community/community.html">Samfélag</a>
+                    </li>
+                    <li class="flex items-center gap-2 lg:hidden">
+                        <img src="/images/User icon.svg" alt="user icon" class="w-10">
+                        <p class="text-[#DE8417]">Notandanafn</p>
+                    </li>
+                    <div class="flex items-center justify-center lg:hidden w-full">
+                        <button class="border-2 border-[#DE8417] rounded-2xl w-40 h-10">
+                            <p class="font-bruno text-[#DE8417]">Skrá út</p>
+                        </button>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+        <nav class=" flex items-center place-content-evenly w-full h-[72px] bg-[#121212] fixed z-50">
+            <a class="flex items-center" href="/src/Home/home.html">
+                <img src="/images/logo-orange.svg" alt="Logo" class="absolute left-[24px] w-[48px]">
+            </a>
+            <div class="hidden lg:block mx-auto">
+                <ul class="flex gap-[4rem] font-['Bruno_Ace'] pl-20">
+                    <li class="text-[#D2D2DA] hover:text-[#DE8417]">
+                        <a href="/src/Home/home.html">Heim</a>
+                    </li>
+                    <li class="text-[#D2D2DA] hover:text-[#DE8417]">
+                        <a href="/src/Bookshelf/bookshelf.html">Bókahilla</a>
+                    </li>
+                    <li class="text-[#D2D2DA] hover:text-[#DE8417]">
+                        <a href="/src/Community/community.html">Samfélag</a>
+                    </li>
+                </ul>
+            </div>
+            <!--Search Bar-->
+            <div class="relative mx-auto">
+                <img src="/images/search-small.svg" alt="Search"
+                    class="absolute left-10 top-1/2 -translate-y-1/2 w-4">
+                <input type="text" placeholder="Leita" 
+                    class=" pl-10 flex items-center text-[#DE8417] font-[Poppins] border-2 border-[#DE8417] w-[clamp(160px,50vw,400px)] h-[32px] rounded-2xl ml-[24px] mr-[24px] focus:outline-none">
+            </div>
+            <!--Hamburger Menu-->
+            <a class="flex items-center" href="#">
+                <img id="Hamburger" src="/images/hamburger-icon.svg" alt="Hamburger" class="absolute right-[16px] lg:hidden">
+            </a>
+            <!--User Icon-->
+            <a class="flex items-center" href="/src/Profile/profile.html">
+                <img src="/images/User icon.svg" alt="user icon" class="absolute right-[24px] w-[40px] hidden lg:block">
+            </a>
+        </nav>
+    </header>
 
- <header class="fixed inset-x-0 top-0 z-50 bg-[#121212]">
-  
-  <!-- Bar -->
-  <div class="mx-auto flex h-[72px] w-full items-center justify-evenly px-6">
-    <a href="/src/Home/home.html" class="flex items-center">
-      <img src="/images/logo-orange.svg" alt="Logo" class="w-[48px]">
-    </a>
+   <div class="h-24"></div> 
 
-    <!-- Desktop links -->
-    <div class="hidden lg:block">
-      <ul class="flex gap-[4rem] font-['Bruno_Ace']">
-        <li><a href="/src/Home/home.html" class="text-[#D2D2DA] hover:text-[#DE8417]">Heim</a></li>
-        <li><a href="/src/Bookshelf/bookshelf.html" class="text-[#D2D2DA] hover:text-[#DE8417]">Bókahilla</a></li>
-        <li><a href="/src/Community/community.html" class="text-[#D2D2DA] hover:text-[#DE8417]">Samfélag</a></li>
-      </ul>
-    </div>
-
-    <!-- Search (desktop) -->
-    <div class="relative hidden lg:block">
-      <img src="/images/search-small.svg" alt="Search" class="absolute left-3 top-1/2 -translate-y-1/2 w-4">
-      <input type="text" placeholder="Leita"
-        class="pl-10 text-[#DE8417] font-[Poppins] border-2 border-[#DE8417] w-[clamp(160px,50vw,400px)] h-[32px] rounded-2xl focus:outline-none">
-    </div>
-
-    <!-- Hamburger (mobile) -->
-    <button id="Hamburger" class="lg:hidden">
-      <img src="/images/hamburger-icon.svg" alt="Hamburger" class="w-8 h-8">
-    </button>
-  </div>
-
-  <!-- Mobile menu (drops under the bar) -->
-  <div id="mobileNav" class="hidden lg:hidden absolute inset-x-0 top-[72px] bg-[#121212]">
-    <ul class="flex flex-col gap-6 font-['Bruno_Ace'] px-6 py-6">
-      <li><a href="/src/Home/home.html" class="text-[#D2D2DA] hover:text-[#DE8417]">Heim</a></li>
-      <li><a href="/src/Bookshelf/bookshelf.html" class="text-[#D2D2DA] hover:text-[#DE8417]">Bókahilla</a></li>
-      <li><a href="/src/Community/community.html" class="text-[#D2D2DA] hover:text-[#DE8417]">Samfélag</a></li>
-      <li class="flex items-center gap-2">
-        <img src="/images/User icon.svg" alt="User" class="w-10"><p class="text-[#DE8417]">Notandanafn</p>
-      </li>
-      <div class="flex items-center justify-center">
-        <button class="border-2 border-[#DE8417] rounded-2xl w-40 h-10">
-          <p class="font-['Bruno_Ace'] text-[#DE8417]">Skrá út</p>
-        </button>
-      </div>
-    </ul>
-  </div>
-</header>
-
-    <!--User icon-->
+    <!--User icon centered -->
 
     <section class="flex justify-center items-center">
-        <img class="w-[9rem] h-[9rem] mt-[10rem]" 
+        <img class="w-[9rem] h-[9rem]" 
             src="/images/User icon.svg" alt="Logo">
     </section>
 
@@ -138,14 +155,14 @@ display=swap" rel="stylesheet">
 
    <!-- Bookshelf row 2 -->
 <section class="flex  flex-col justify-center items-center mt-[1rem]">
-  <div class="flex justify-center items center gap-x-[clamp(2rem,5vw,2rem)] mb-[-0.5rem]">
-  <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/Academy for liars.png" alt="Krákuveisla">
-  <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/Brothersong(1).png" alt="Hunger Games">
-  <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/Black bird oracle.png" alt="Litlu dauðarnir">
-   <img  class="hidden md:block w-[clamp(5rem,20vw,12rem)]" src="/images/Smirnoff(1).png" alt="Litlu dauðarnir">
+    <div class="flex justify-center items center gap-x-[clamp(2rem,5vw,2rem)] mb-[-0.5rem]">
+        <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/Academy for liars.png" alt="Krákuveisla">
+        <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/Brothersong(1).png" alt="Hunger Games">
+        <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/Black bird oracle.png" alt="Litlu dauðarnir">
+        <img  class="hidden md:block w-[clamp(5rem,20vw,12rem)]" src="/images/Smirnoff(1).png" alt="Litlu dauðarnir">
  </div>
   <!--Shelf-->
-  <img class="w-[clamp(22rem,120vw,80rem)] h-[2rem] z-[-3]"src="/images/bookshelf.png" alt="bookshelf">
+        <img class="w-[clamp(22rem,120vw,80rem)] h-[2rem] z-[-3]"src="/images/bookshelf.png" alt="bookshelf">
   </section>
 
 <div class="flex items-center justify-between w-full md:justify-center ">
@@ -156,11 +173,11 @@ display=swap" rel="stylesheet">
 
    <!-- Bookshelf row 3 -->
 <section class="flex  flex-col justify-center items-center">
-  <div class="flex justify-center items center gap-x-[clamp(2rem,5vw,2rem)] mb-[-0.5rem] " >
-  <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/When we were monsters.png" alt="Krákuveisla">
-  <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/Beautiful ugly.png" alt="Hunger Games">
-  <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/OnebyOne(1).png" alt="Litlu dauðarnir">
-  <img  class="hidden md:block w-[clamp(5rem,20vw,12rem)]" src="/images/secret-of-secrets.png" alt="Litlu dauðarnir">
+<div class="flex justify-center items center gap-x-[clamp(2rem,5vw,2rem)] mb-[-0.5rem] " >
+    <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/When we were monsters.png" alt="Krákuveisla">
+    <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/Beautiful ugly.png" alt="Hunger Games">
+    <img  class="w-[clamp(5rem,20vw,12rem)]" src="/images/OnebyOne(1).png" alt="Litlu dauðarnir">
+    <img  class="hidden md:block w-[clamp(5rem,20vw,12rem)]" src="/images/secret-of-secrets.png" alt="Litlu dauðarnir">
  </div>
   <!--Shelf-->
   <img class="w-[clamp(15rem,120vw,80rem)] h-[2rem] mb-[10rem] z-[-3]"src="/images/bookshelf.png" alt="bookshelf">

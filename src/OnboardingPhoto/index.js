@@ -1,5 +1,5 @@
 function selectImage(imagePath, element) {
-    // Save selected image path
+    // Save selected image
     localStorage.setItem("selectedImage", imagePath);
     // Remove border from all images within <main>
     var images = document.querySelectorAll("main img");
