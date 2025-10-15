@@ -16,6 +16,56 @@
 </head>
 
 <body class="bg-background">
+    
+ <header class="fixed inset-x-0 top-0 z-50 bg-[#121212]">
+  
+  <!-- Bar -->
+  <div class="mx-auto flex h-[72px] w-full items-center justify-evenly px-6">
+    <a href="/src/Home/home.html" class="flex items-center">
+      <img src="/images/logo-orange.svg" alt="Logo" class="w-[48px]">
+    </a>
+
+    <!-- Desktop links -->
+    <div class="hidden lg:block">
+      <ul class="flex gap-[4rem] font-['Bruno_Ace']">
+        <li><a href="/src/Home/home.html" class="text-[#D2D2DA] hover:text-[#DE8417]">Heim</a></li>
+        <li><a href="/src/Bookshelf/bookshelf.html" class="text-[#D2D2DA] hover:text-[#DE8417]">Bókahilla</a></li>
+        <li><a href="/src/Community/community.html" class="text-[#D2D2DA] hover:text-[#DE8417]">Samfélag</a></li>
+      </ul>
+    </div>
+
+    <!-- Search (desktop) -->
+    <div class="relative hidden lg:block">
+      <img src="/images/search-small.svg" alt="Search" class="absolute left-3 top-1/2 -translate-y-1/2 w-4">
+      <input type="text" placeholder="Leita"
+        class="pl-10 text-[#DE8417] font-[Poppins] border-2 border-[#DE8417] w-[clamp(160px,50vw,400px)] h-[32px] rounded-2xl focus:outline-none">
+    </div>
+
+    <!-- Hamburger (mobile) -->
+    <button id="Hamburger" class="lg:hidden">
+      <img src="/images/hamburger-icon.svg" alt="Hamburger" class="w-8 h-8">
+    </button>
+  </div>
+
+  <!-- Mobile menu (drops under the bar) -->
+  <div id="mobileNav" class="hidden lg:hidden absolute inset-x-0 top-[72px] bg-[#121212]">
+    <ul class="flex flex-col gap-6 font-['Bruno_Ace'] px-6 py-6">
+      <li><a href="/src/Home/home.html" class="text-[#D2D2DA] hover:text-[#DE8417]">Heim</a></li>
+      <li><a href="/src/Bookshelf/bookshelf.html" class="text-[#D2D2DA] hover:text-[#DE8417]">Bókahilla</a></li>
+      <li><a href="/src/Community/community.html" class="text-[#D2D2DA] hover:text-[#DE8417]">Samfélag</a></li>
+      <li class="flex items-center gap-2">
+        <img src="/images/User icon.svg" alt="User" class="w-10"><p class="text-[#DE8417]">Notandanafn</p>
+      </li>
+      <div class="flex items-center justify-center">
+        <button class="border-2 border-[#DE8417] rounded-2xl w-40 h-10">
+          <p class="font-['Bruno_Ace'] text-[#DE8417]">Skrá út</p>
+        </button>
+      </div>
+    </ul>
+  </div>
+</header>
+
+    
     <!--Created gap to keep space under navbar-->
     <div class="h-24"></div> 
 
@@ -100,6 +150,7 @@
 
     <!--Created space in the bottom-->
     <div class="h-24"></div> 
+      <script src="../hamburger.js"></script>
 
 </body>
 </html>

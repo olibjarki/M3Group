@@ -15,22 +15,20 @@ if (train) {
     }
     move();
 }
-var train2 = document.getElementById("book-train-2");
-if (train2) {
-    // Clone all books once automatically for seamless loop
-    train2.innerHTML += train2.innerHTML;
-    var contentWidth_1 = train2.clientWidth;
-    console.log(contentWidth_1);
-    var position2_1 = contentWidth_1 * -1; // Start offscreen to left
+var train_2 = document.getElementById("book-train2");
+if (train_2) {
+    // Clone all books for seamless loop
+    train_2.innerHTML += train_2.innerHTML;
+    var position2_1 = 0;
     var speed2_1 = 0.5;
-    function move2() {
-        position2_1 += speed2_1; // Move to the right
-        train2.style.transform = "translateX(".concat(position2_1, "px)");
-        // Reset once full loop completes
-        if (position2_1 >= 0) {
-            position2_1 = contentWidth_1 * -1;
+    function move_2() {
+        position2_1 -= speed2_1;
+        train_2.style.transform = "translateX(".concat(position2_1, "px)");
+        var resetPoint = train_2.scrollWidth;
+        if (Math.abs(position2_1) >= resetPoint) {
+            position2_1 = 0;
         }
-        requestAnimationFrame(move2);
+        requestAnimationFrame(move_2); // ✅ Correct function name
     }
-    move2();
+    move_2(); // ✅ Start the correct animation loop
 }
