@@ -2,49 +2,49 @@ var bookList = [{
         title: "Fourth Wing",
         author: "Rebecca Yarros",
         pages: 432,
-        picture: "/images/fourth-wing.png",
+        picture: "../../images/fourth-wing.png",
         bookshelfStatus: ""
     },
     {
         title: "Dóttir hafsins",
         author: "Kristín Björg Sigurvinsdóttir",
         pages: 288,
-        picture: "/images/dottir-hafsins.png",
+        picture: "../../images/dottir-hafsins.png",
         bookshelfStatus: ""
     },
     {
         title: "Hail Mary",
         author: "Andy Weir",
         pages: 496,
-        picture: "/images/hail-mary.png",
+        picture: "../../images/hail-mary.png",
         bookshelfStatus: ""
     },
     {
         title: "The Secret of Secrets",
         author: "Dan Brown",
         pages: 688,
-        picture: "/images/secret-of-secrets.png",
+        picture: "../../images/secret-of-secrets.png",
         bookshelfStatus: ""
     },
     {
         title: "Korku saga",
         author: "Vilborg Davíðsdóttir",
         pages: 384,
-        picture: "/images/korku-saga.png",
+        picture: "../../images/korku-saga.png",
         bookshelfStatus: "",
     },
     {
         title: "Sól rís á sláttudegi",
         author: "Suzanne Collins",
         pages: 459,
-        picture: "/images/sol-ris-a-slattudegi.png",
+        picture: "../../images/sol-ris-a-slattudegi.png",
         bookshelfStatus: "",
     },
     {
         title: "Atmosphere",
         author: "Taylor Jenkins Reid",
         pages: 352,
-        picture: "/images/atmosphere.png",
+        picture: "../../images/atmosphere.png",
         bookshelfStatus: ""
     },
     {
