@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../output.css" rel="stylesheet">
+    <title>Onboarding Page</title>
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Cal+Sans&family=Fascinate&family=Gurajada&family=Jaro:opsz@6..72&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body class="bg-[#1D1D1D]">
+        <!--Logo-->
+    <header class="flex justify-center items-center mt-[3rem] mb-[3rem]">
+        <img class="w-[10rem] h-[10rem]"
+            src="/images/logo-orange.svg" alt="Logo">
+    </header>
+
+    <!--Photo Upload section-->
+    <section class="flex justify-center ">
+        <div class="flex flex-col items-center">
+        <p class="font-[poppins] text-[#E0E0E0] text-[0.875rem] pb-[0.69rem] text-center mt-[1.44rem] mb-[1.56rem] md:text-xl">Bættu við prófílmynd </p>
+        <img class="flex items-center-safe" src="/images/Profilesqr.png" alt="Profile Picture">
+        <p class="font-[poppins] text-[#E0E0E0] text-[0.875rem] pb-[0.69rem] text-center mt-[1.75rem] md:text-xl">eða</p>
+        <p class="font-[poppins] text-[#E0E0E0] text-[0.875rem] pb-[0.69rem] text-center mb-[3.31rem] md:text-xl">Veldu eina af þessum myndum</p>
+        </div>
+    </section>
+    <!--3 profile ilustrations-->
+   <main class="flex justify-center gap-[2.37rem]">
+  <img class="md:w-25 cursor-pointer" src="/images/Profile icon 3.png" alt="Illustration 1" onclick="selectImage('/images/Profile icon 3.png', this)">
+  <img class="md:w-25 cursor-pointer" src="/images/Profile icon 1.png" alt="Illustration 1" onclick="selectImage('/images/Profile icon 1.png', this)">
+  <img class="md:w-25 cursor-pointer" src="/images/Profile icon 4.png" alt="Illustration 1" onclick="selectImage('/images/Profile icon 4.png', this)">
+</main>
+    <!--Confirm button-->
+            <div class="flex justify-center">
+         <a href="../Onboarding/index.html">
+            <button class="w-[clamp(14.31rem,20vw,20rem)]  h-[clamp(2.8rem,3.5vw,3.5rem)] bg-[#DE8417] rounded-[1.5rem] mt-[3rem] font-[poppins] text-[#E0E0E0] mb-[3rem] md:text-xl"> 
+            Staðfesta
+            </button>
+        </a>
+        </div>
+   <script src="index.js"></script>
+</body>
+</html>
