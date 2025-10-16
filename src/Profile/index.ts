@@ -1,3 +1,5 @@
+
+
 const chosen_profile = localStorage.getItem("selectedImage");
 const profileImg_profile = document.getElementById("profile") as HTMLImageElement;
 
