@@ -205,6 +205,9 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
+  .top-1 {
+    top: calc(var(--spacing) * 1);
+  }
   .top-1\/2 {
     top: calc(1/2 * 100%);
   }
@@ -286,9 +289,6 @@
   .mt-\[1\.5rem\] {
     margin-top: 1.5rem;
   }
-  .mt-\[1\.44rem\] {
-    margin-top: 1.44rem;
-  }
   .mt-\[1\.75rem\] {
     margin-top: 1.75rem;
   }
@@ -358,17 +358,11 @@
   .mb-\[1\.25rem\] {
     margin-bottom: 1.25rem;
   }
-  .mb-\[1\.56rem\] {
-    margin-bottom: 1.56rem;
-  }
   .mb-\[1rem\] {
     margin-bottom: 1rem;
   }
   .mb-\[2rem\] {
     margin-bottom: 2rem;
-  }
-  .mb-\[3\.31rem\] {
-    margin-bottom: 3.31rem;
   }
   .mb-\[3rem\] {
     margin-bottom: 3rem;
@@ -417,6 +411,9 @@
   }
   .inline-block {
     display: inline-block;
+  }
+  .table {
+    display: table;
   }
   .h-8 {
     height: calc(var(--spacing) * 8);
@@ -613,6 +610,13 @@
   .flex-1 {
     flex: 1;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .-translate-y-1 {
+    --tw-translate-y: calc(var(--spacing) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
   .-translate-y-1\/2 {
     --tw-translate-y: calc(calc(1/2 * 100%) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -622,6 +626,9 @@
   }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .resize {
+    resize: both;
   }
   .resize-none {
     resize: none;
@@ -808,8 +815,17 @@
     --tw-gradient-position: to bottom in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
+  .bg-\[url\(\'\.\.\/\.\.\/\/images\/bookshelf-desktop\.png\'\)\] {
+    background-image: url('../..//images/bookshelf-desktop.png');
+  }
+  .bg-\[url\(\'\.\.\/\.\.\/images\/bookshelf-desktop\.png\'\)\] {
+    background-image: url('../../images/bookshelf-desktop.png');
+  }
   .bg-\[url\(\'\/images\/bookshelf-desktop\.png\'\)\] {
     background-image: url('/images/bookshelf-desktop.png');
+  }
+  .bg-\[url\(\'images\/bookshelf-desktop\.png\'\)\] {
+    background-image: url('images/bookshelf-desktop.png');
   }
   .from-\[\#121212\] {
     --tw-gradient-from: #121212;
@@ -1034,9 +1050,16 @@
   .uppercase {
     text-transform: uppercase;
   }
+  .underline {
+    text-decoration-line: underline;
+  }
   .shadow {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .hover\:text-\[\#DE8417\] {
     &:hover {
@@ -1426,6 +1449,11 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -1465,6 +1493,7 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-outline-style: solid;
     }
   }
 }
